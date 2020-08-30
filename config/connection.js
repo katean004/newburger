@@ -1,4 +1,3 @@
-// Set up MySQL connection.
 var mysql = require("mysql");
 
 if (process.env.JAWSDB_URL) {
@@ -13,14 +12,12 @@ if (process.env.JAWSDB_URL) {
   });
 }
 
-// Make connection.
-connection.connect(function(err) {
+connection.connect((err) => {
   if (err) {
-    console.error("error connecting: " + err.stack);
+    console.log("error connecting " + err.stack);
     return;
   }
   console.log("connected as id " + connection.threadId);
 });
 
-// Export connection for our ORM to use.
 module.exports = connection;
