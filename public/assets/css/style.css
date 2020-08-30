@@ -22,3 +22,34 @@ body {
     background-color: rgb(255, 199, 131);
 }
 
+.burgerImg {
+    height: 140px;
+    width: 150px;
+  }
+
+.uneaten { 
+  margin-right: 250px;
+  }
+
+.eaten { 
+  margin-left: 5px;
+}
+
+.wrapper{
+  display: flex;
+  justify-content: center;
+}
+
+.addBurger {
+    width: 50%;
+}
+
+.clear {
+    clear: both;
+}
+
+.center {
+    margin: auto;
+    padding: 10px;
+    width: 48%;
+}
