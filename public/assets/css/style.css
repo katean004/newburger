@@ -1,55 +1,66 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.hero {
+  height: 500px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  background-image: url("https://images.pexels.com/photos/617230/pexels-photo-617230.jpeg?cs=srgb&dl=pexels-artem-beliaikin-617230.jpg&fm=jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  box-shadow: 0 0 25px;
+}
+.body {
+ background-color: #d1d3be;
+}
+#ready-to-eat,
+#eaten {
+  border: 2px solid black;
+  margin: 20px;
+  border-radius: 20px;
+  padding: 5px;
+  background-color: #eeeeee;
+}
+.eat-burger,
+.add-burger {
+  border: 2px solid black;
+  border-radius: 50px;
+  padding: 5px;
+  box-shadow: 0 5px 10px;
+  background-color: #c2ae7c;
+  opacity: 0.7;
+}
+.eat-burger:hover,
+.add-burger:hover {
+  box-shadow: 0 0 0;
+  opacity: 1;
+  background-color: #858a4c;
+}
+
 li {
-    padding: 5px;
-    margin: 5px;
-    background: rgb(255, 199, 131);
-}
-  
-.label {
-    font-weight: bold;
-}
-  
-.create-update-form {
-    padding: 5px;
-    margin: 5px;
-    background: aqua;
-}
-  
-.form-group {
-    margin-bottom: 5px;
-}
-  
-body {
-    background-color: rgb(255, 199, 131);
+  margin: 10px;
+  list-style-type: none;
+  color: #eeeeee;
 }
 
-.burgerImg {
-    height: 140px;
-    width: 150px;
-  }
-
-.uneaten { 
-  margin-right: 250px;
-  }
-
-.eaten { 
-  margin-left: 5px;
+.main-head,
+h2,
+.create-form {
+  text-align: center;
+  margin-bottom: 20px;
 }
-
-.wrapper{
-  display: flex;
+.main-content {
   justify-content: center;
+  margin-top: 10px;
+  background-color: #617373;
+  border-radius: 20px;
 }
 
-.addBurger {
-    width: 50%;
-}
-
-.clear {
-    clear: both;
-}
-
-.center {
-    margin: auto;
-    padding: 10px;
-    width: 48%;
+.row {
+  /* border: 10px solid black; */
+  border-radius: 20px;
 }
